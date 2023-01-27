@@ -1,0 +1,67 @@
+// Setting
+
+// Colors
+$darkest:              var(--wp--preset--color--darkest, #262626) !default;
+$darker:               var(--wp--preset--color--darker, #4d4d4d) !default;
+$dark:                 var(--wp--preset--color--dark, #808080) !default;
+$light:                var(--wp--preset--color--light, #b3b3b3) !default;
+$lighter:              var(--wp--preset--color--lighter, #d9d9d9) !default;
+$lightest:             var(--wp--preset--color--lightest, #ffffff) !default;
+$primary:              var(--wp--preset--color--primary, #3399cc) !default;
+$primaryLight:         var(--wp--preset--color--primary-light, #85c2e0) !default;
+$secondary:            var(--wp--preset--color--secondary, #cc334b) !default;
+$secondaryLight:       var(--wp--preset--color--secondary-light, #e08594) !default;
+$black:                var(--wp--preset--color--black, #000000) !default;
+$white:                var(--wp--preset--color--white, #ffffff) !default;
+$linkColor:            $darker !default;
+$linkHoverColor:       $primary !default;
+
+// Spacing
+$spacingValues:  (
+  0:               0,
+  1:               var(--wp--custom--spacing--x-small, 0.375rem),
+  2:               var(--wp--custom--spacing--small, 0.75rem),
+  3:               var(--wp--custom--spacing--medium, 1.5rem),
+  4:               var(--wp--custom--spacing--large, 3rem),
+  5:               var(--wp--custom--spacing--x-large, 6rem)
+) !default;
+
+@function space($key: 2) {
+  @return map-get($spacingValues, $key);
+}
+
+// Font sizes
+$h1FontSize:           var(--wp--preset--font-size--x-large, 2rem) !default;
+$h2FontSize:           var(--wp--custom--font-size--x-large, 1.5rem) !default;
+$h3FontSize:           var(--wp--custom--font-size--large, 1.33rem) !default;
+$h4FontSize:           var(--wp--custom--font-size--medium, 1.17rem) !default;
+$h5FontSize:           var(--wp--custom--font-size--normal, 1rem) !default;
+$h6FontSize:           var(--wp--custom--font-size--small, 0.875rem) !default;
+
+// Filter for images
+$blur:                 brightness(0.85) blur(1px) !default;
+$whiten:               invert(1) grayscale(1) brightness(4) !default;
+
+// Breakpoint
+$breakpoint:           900px !default;
+
+// Drawer Menu
+$drawerAlwaysShown:    false !default;
+$drawerPad:            0.75rem !default;  // calc関数を使用するためCSS変数を避ける
+$drawerHeight:         48px !default;
+$drawerMenuDarkBg:     $primary !default;
+
+// Preloader
+$spinnerWidth:         48px !default;
+$spinnerBarsCount:     12 !default;
+$spinnerBarsBg:        $white !default; // rgba関数を使用するためCSS変数を避ける
+$preloaderHeight:      100vh !default;
+$preloaderBg:          $primary !default;
+
+// Slider
+$sliderAspectRatio:    5 / 8 !default;
+$sliderHeights:        (
+  sm:                    12rem,
+  md:                    18rem,
+  lg:                    24rem
+) !default;

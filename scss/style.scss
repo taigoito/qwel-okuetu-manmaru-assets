@@ -1,49 +1,11 @@
 @charset "utf-8";
 
-// Settings
-@import "foundation/settings/colorSystem";
-@import "foundation/settings/gridSystem";
-@import "foundation/settings/typography";
-@import "foundation/settings/components";
-
-// Mixins
-@import "foundation/mixins/background";
-@import "foundation/mixins/button";
-@import "foundation/mixins/form";
-@import "foundation/mixins/table";
-@import "foundation/mixins/type";
-
-// Normalize
-@import "foundation/normalize";
-
-// Layout
-@import "layout/container";
-@import "layout/header";
-@import "layout/gNav";
-@import "layout/main";
-@import "layout/footer";
-
-// Components
-@import "objects/components/button";
-@import "objects/components/cover";
-@import "objects/components/drawerMenu";
-@import "objects/components/embed";
-@import "objects/components/form";
-@import "objects/components/icon";
-@import "objects/components/preloader";
-@import "objects/components/responsiveColor";
-@import "objects/components/slider";
-@import "objects/components/table";
-
-// Projects
-@import "objects/projects/hero";
-@import "objects/projects/section";
-@import "objects/projects/postItem";
-@import "objects/projects/postList";
-
-// Utility
-@import "objects/utilities/flex";
-@import "objects/utilities/flexItem";
-@import "objects/utilities/spacing";
-@import "objects/utilities/text";
-@import "objects/utilities/visibility";
+@import "setting";
+@import "breadcrumb";
+@import "cover";
+@import "drawerMenu";
+@import "embed";
+@import "icon";
+@import "preloader";
+@import "responsiveColor";
+@import "slider";

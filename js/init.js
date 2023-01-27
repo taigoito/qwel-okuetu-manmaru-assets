@@ -2,36 +2,37 @@
  * Init
  * Author: Taigo Ito (https://qwel.design/)
  * Location: Fukui, Japan
+ * @package Qwel-Assets
  */
 
 // Drawer Menu
-//import DrawerMenu from './js/_drawerMenu.js';
+import DrawerMenu from './_drawerMenu.js';
 new DrawerMenu();
 
 // Embed
-//import Embed from './js/embed.js';
+import Embed from './_embed.js';
 new Embed();
 
 // Evil Icons
-//import EvilIcons from './js/_evilIcons.js';
+import EvilIcons from './_evilIcons.js';
 new EvilIcons();
 
 // Fader
-//import Fader from './js/fader.js';
+import Fader from './_fader.js';
 new Fader();
 
 // Preloader
-//import Preloader from './js/preloader.js';
+import Preloader from './_preloader.js';
 new Preloader();
 
 // Responsive Color
-//import ResponsiveColor from './js/responsiveColor.js';
+import ResponsiveColor from './_responsiveColor.js';
 new ResponsiveColor();
 
 // Scrolling
-//import Scrolling from './js/_scrolling.js';
+import Scrolling from './_scrolling.js';
 new Scrolling();
 
 // Slider
-//import Slider from './js/slider.js';
+import Slider from './_slider.js';
 new Slider();

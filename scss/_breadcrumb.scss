@@ -1,0 +1,25 @@
+/**
+ * Breadcrumb
+ */
+
+.breadcrumb {  
+  position: relative;
+  width: 100%;
+  margin: 0 auto space(3);
+  padding: space(3) 0;
+  font-size: $h6FontSize;
+  line-height: var(--wp--custom--line-height--large);
+  letter-spacing:  0.04rem;
+
+  &__item {
+    display: inline-block;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    
+    &:not(:first-child)::before {
+      content: ">";
+      padding-left: space(1);
+      padding-right: space(1);
+    }
+  }
+}
