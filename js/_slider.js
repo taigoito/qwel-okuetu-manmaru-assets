@@ -11,7 +11,7 @@ export default class Slider {
     // Sliderの各要素
     this._elem = elem || document.querySelector('.slider');
     if (!this._elem) return;
-    this._inner = this._elem.querySelector('.slider__inner');
+    this._inner = this._elem.querySelector('.is-style-slider-items');
     if (!this._inner) return;
     this._items = this._inner.children;
     if (!this._items.length) return;
