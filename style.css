@@ -423,7 +423,7 @@ button, [type=button], [type=reset], [type=submit] {
   width: clamp(18rem, 40%, 24rem);
   height: 100%;
   margin: auto;
-  background-color: #b3b3b3;
+  background-color: #d9d9d9;
   text-align: center;
   transition: width ease-in-out 0.25s;
 }
