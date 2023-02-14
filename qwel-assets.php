@@ -66,7 +66,8 @@ class Qwel_Assets {
 
   public function enqueue_scripts() {
     // バージョン情報
-    $version = '1.0';
+    $plugin_data = get_plugin_data( __FILE__ );
+    $version     = $plugin_data['Version'];
 
 		// style.css
 		wp_enqueue_style(
