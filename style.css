@@ -429,7 +429,7 @@
   padding: var(--wp--custom--spacing--small, 0.75rem) var(--wp--custom--spacing--medium, 1.5rem);
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
   color: var(--wp--preset--color--white, #ffffff);
-  font-size: var(--wp--custom--font-size--x-large, 1.5rem);
+  font-size: var(--wp--custom--font-size--medium, 1.17rem);
   text-align: center;
 }
 .slider .is-style-slider-items .wp-block-image .wp-element-caption a {
