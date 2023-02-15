@@ -56,8 +56,8 @@
   right: 0;
   z-index: 1110;
   display: block;
-  width: calc(1.5rem + 48px);
-  height: calc(1.5rem + 48px);
+  width: calc(3rem + 48px);
+  height: calc(3rem + 48px);
   padding: 0;
   border: 0;
   background-color: transparent;
@@ -72,11 +72,16 @@
 }
 .drawer__navicon.icon, .drawer__close.icon {
   position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
+  top: 1.5rem;
+  right: 1.5rem;
   width: 48px;
   height: 48px;
   transition: 0.25s all ease-in-out;
+}
+.drawer__navicon.icon {
+  border-radius: 50%;
+  background-color: var(--wp--preset--color--primary, #3399cc);
+  color: var(--wp--preset--color--white, #ffffff);
 }
 .drawer__navicon {
   opacity: 0;
