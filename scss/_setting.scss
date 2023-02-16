@@ -59,9 +59,9 @@ $preloaderHeight:      100vh !default;
 $preloaderBg:          $primary !default;
 
 // Slider
-$sliderAspectRatio:    5 / 8 !default;
+$sliderAspectRatio:    5 / 4 !default;
 $sliderHeights:        (
-  sm:                    12rem,
-  md:                    18rem,
-  lg:                    24rem
+  sm:                    18rem,
+  md:                    24rem,
+  lg:                    36rem
 ) !default;

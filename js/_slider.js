@@ -11,7 +11,7 @@ export default class Slider {
     // Sliderの各要素
     this._elem = elem || document.querySelector('.slider');
     if (!this._elem) return;
-    this._inner = this._elem.querySelector('.is-style-slider-items');
+    this._inner = this._elem.querySelector('.slider__inner');
     if (!this._inner) return;
     this._items = this._inner.children;
     if (!this._items.length) return;
@@ -19,7 +19,7 @@ export default class Slider {
     // 各オプション (data属性から取得)
     this._isHeader = this._elem.dataset.isHeader || false; // headerに設置する場合はドラグ、ホイール操作に対応しない
     this._aspectRatio = this._elem.dataset.aspectRatio || 5 / 8;
-    this._gap = this._elem.dataset.gap - 0 || 0; // アイテム間隔(px)
+    this._gap = 48; // アイテム間隔(px)
     this._interval = this._elem.dataset.interval || 3000; // 1000未満を指定すると自動再生しない
     this._duration = this._elem.dataset.duration || 500;
 
@@ -145,7 +145,7 @@ export default class Slider {
     this._next.appendChild(nextIcon);
 
     // .slider__nav
-    this._nav = document.createElement('ul');
+    /*this._nav = document.createElement('ul');
     this._nav.classList.add('slider__nav');
 
     // .slider__navItem
@@ -158,7 +158,7 @@ export default class Slider {
 
     this._elem.appendChild(this._prev);
     this._elem.appendChild(this._next);
-    this._elem.after(this._nav);
+    this._elem.after(this._nav);*/
 
   }
 
@@ -183,11 +183,11 @@ export default class Slider {
     }
     this._items[this._currentIndex].classList.add('--current');
     // ナビゲーション
-    if (this._nav.querySelector('.--current')) {
+    /*if (this._nav.querySelector('.--current')) {
       this._nav.querySelector('.--current').classList.remove('--current');
     }
     this._navItems = this._nav.children;
-    this._navItems[this._currentIndex % this._itemsCount].classList.add('--current');
+    this._navItems[this._currentIndex % this._itemsCount].classList.add('--current');*/
 
   }
 
@@ -272,13 +272,13 @@ export default class Slider {
     });
 
     // ナビゲーション操作
-    this._nav.addEventListener('click', (event) => {
+    /*this._nav.addEventListener('click', (event) => {
       const target = event.target;
       if (target.dataset.targetIndex) {
         this.move(target.dataset.targetIndex - this._currentIndex % this._itemsCount);
         this.stopInterval();
       }
-    });
+    });*/
 
     // 前ボタン
     this._prev.addEventListener('click', (event) => {
