@@ -394,7 +394,7 @@
   margin-bottom: 0;
   transform: translateX(0);
 }
-.slider__item {
+.slider__inner .wp-block-post {
   position: relative;
   flex: 0 1 auto;
   order: 0;
@@ -402,7 +402,7 @@
   opacity: 1;
   transition: opacity 0.15s linear;
 }
-.slider__item:not(.--current) {
+.slider__inner .wp-block-post:not(.--current) {
   opacity: 0.5;
 }
 .slider__prev, .slider__next {
